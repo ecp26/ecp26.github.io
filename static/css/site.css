@@ -1,0 +1,221 @@
+:root {
+  --background: #f7f6f2;
+  --surface: #ffffff;
+  --ink: #1c2433;
+  --muted: #596273;
+  --line: #dfe2e7;
+  --accent: #1d477f;
+  --accent-soft: #edf3fa;
+  --highlight: #d9a91d;
+  --content-width: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .16em;
+}
+
+a:hover { text-decoration-thickness: .14em; }
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 10;
+  padding: .55rem .85rem;
+  background: var(--ink);
+  color: white;
+}
+
+.skip-link:focus { top: 1rem; }
+
+.site-header {
+  padding: 1rem max(24px, calc((100% - var(--content-width)) / 2));
+  border-top: 4px solid var(--highlight);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  color: var(--ink);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .025em;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 45px;
+  height: 34px;
+  place-items: center;
+  background: var(--accent);
+  color: white;
+  font-size: .75rem;
+  letter-spacing: .1em;
+}
+
+main { background: var(--surface); }
+
+.page-content {
+  width: min(calc(100% - 48px), var(--content-width));
+  margin: 0 auto;
+  padding: clamp(4rem, 9vw, 7rem) 0 7rem;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  color: var(--ink);
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+.page-content h1 {
+  max-width: 720px;
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.8rem, 8vw, 5.1rem);
+  letter-spacing: -.045em;
+}
+
+.page-content h2 {
+  scroll-margin-top: 2rem;
+  margin: 5rem 0 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.8rem, 4vw, 2.45rem);
+  letter-spacing: -.025em;
+}
+
+.page-content h3 {
+  margin: 2.25rem 0 .75rem;
+  font-size: 1.35rem;
+  letter-spacing: -.01em;
+}
+
+.page-content h4 {
+  margin: 2rem 0 .25rem;
+  padding-left: .8rem;
+  border-left: 3px solid var(--highlight);
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+.page-content p {
+  margin: 0 0 1.15rem;
+  color: #3f4858;
+}
+
+.page-content h1 + p {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: .2rem .6rem;
+  border-radius: 3px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.page-content h1 + p + p {
+  max-width: 680px;
+  color: var(--accent);
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.page-content h1 + p + p em { font-style: normal; }
+
+.page-content ul,
+.page-content ol {
+  margin: 1.35rem 0 1.8rem;
+  padding-left: 1.35rem;
+}
+
+.page-content li {
+  margin: .55rem 0;
+  padding-left: .25rem;
+  color: #465061;
+}
+
+.page-content li::marker { color: var(--highlight); }
+.page-content strong { color: var(--ink); }
+.page-content h4 + p { color: var(--muted); }
+
+.page-content blockquote {
+  margin: 2rem 0;
+  padding: .2rem 0 .2rem 1.25rem;
+  border-left: 3px solid var(--accent);
+}
+
+.page-content blockquote p { color: var(--muted); }
+
+.page-content hr {
+  margin: 4rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.page-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.page-content table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  font-size: .94rem;
+}
+
+.page-content th,
+.page-content td {
+  padding: .7rem .8rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem max(24px, calc((100% - var(--content-width)) / 2));
+  background: var(--ink);
+  color: #dfe5ef;
+  font-size: .8rem;
+}
+
+.site-footer nav { display: flex; gap: 1.25rem; }
+.site-footer a { color: #dfe5ef; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .site-header { padding-inline: 16px; }
+  .brand > span:last-child { display: none; }
+  .page-content { width: min(calc(100% - 32px), var(--content-width)); padding-top: 3.5rem; }
+  .page-content h2 { margin-top: 4rem; }
+  .site-footer { flex-direction: column; padding-inline: 16px; }
+}
