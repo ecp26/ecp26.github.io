@@ -63,7 +63,10 @@
               }
             }
           ]
-          #element("details", attrs: (class: "mobile-nav"))[
+          #element("details", attrs: (
+            class: "mobile-nav",
+            style: "display: none",
+          ))[
             #element("summary", attrs: (
               "aria-label": "Open navigation menu",
             ))[

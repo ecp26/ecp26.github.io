@@ -102,8 +102,6 @@ a:focus-visible {
 
 .site-nav a:hover { color: var(--accent); }
 
-.mobile-nav { display: none; }
-
 main { background: var(--surface); }
 
 .page-content {
@@ -451,7 +449,7 @@ main { background: var(--surface); }
 
   .mobile-nav {
     position: relative;
-    display: block;
+    display: block !important;
   }
 
   .mobile-nav summary {
