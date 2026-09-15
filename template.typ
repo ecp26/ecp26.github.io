@@ -95,6 +95,20 @@
       read("static/images/people/" + picture, encoding: none),
     )
   }
+  for logo in (
+    "iabs.jpg",
+    "babs.png",
+    "labbs.jpg",
+    "bing.svg",
+    "biba.png",
+    "holland-harmony.jpg",
+    "snobs.png",
+  ) {
+    asset(
+      "images/endorsers/" + logo,
+      read("static/images/endorsers/" + logo, encoding: none),
+    )
+  }
 }
 
 #let introduction(
@@ -163,10 +177,78 @@
           class: "person-picture",
           src: entry.picture,
           alt: "",
+          loading: "eager",
+          decoding: "sync",
         ))
         #element("div", attrs: (class: "person-details"))[
           #html-heading(3, entry.name)
           #paragraph(class: "person-profile", entry.profile)
+        ]
+      ]
+    }
+  ]
+}
+
+// The short names below are the arguments accepted by `endorsed-by`.
+// To add a society, place its logo in static/images/endorsers/, add an entry
+// here, and then use its short name in main.typ (for example: #endorsed-by("BABS")).
+#let endorser-organizations = (
+  "IABS": (
+    name: "Irish Association of Barbershop Singers",
+    homepage: "https://www.irishbarbershop.com/",
+    logo: "images/endorsers/iabs.jpg",
+  ),
+  "BABS": (
+    name: "British Association of Barbershop Singers",
+    homepage: "https://www.singbarbershop.com/",
+    logo: "images/endorsers/babs.png",
+  ),
+  "LABBS": (
+    name: "Ladies Association of British Barbershop Singers",
+    homepage: "https://www.labbs.org.uk/",
+    logo: "images/endorsers/labbs.jpg",
+  ),
+  "BinG!": (
+    name: "Barbershop in Germany",
+    homepage: "https://www.barbershop.de/en",
+    logo: "images/endorsers/bing.svg",
+  ),
+  "BIBA": (
+    name: "Barbershop of Iberia Association",
+    homepage: "https://bibabarbershop.com/",
+    logo: "images/endorsers/biba.png",
+  ),
+  "Holland Harmony": (
+    name: "Holland Harmony",
+    homepage: "https://www.hollandharmony.nl/",
+    logo: "images/endorsers/holland-harmony.jpg",
+  ),
+  "SNOBS": (
+    name: "Society of Nordic Barbershop Singers",
+    homepage: "https://www.snobs.org/",
+    logo: "images/endorsers/snobs.png",
+  ),
+)
+
+#let endorsed-by(..short-names) = {
+  element("ul", attrs: (
+    class: "endorsements",
+    "aria-label": "Endorsing organizations",
+  ))[
+    #for short-name in short-names.pos() {
+      let organization = endorser-organizations.at(short-name)
+      element("li")[
+        #element("a", attrs: (
+          href: organization.homepage,
+          "aria-label": organization.name,
+        ))[
+          #element("span", attrs: (class: "endorser-logo"))[
+            #void-element("img", attrs: (
+              src: organization.logo,
+              alt: organization.name,
+            ))
+          ]
+          #element("span", attrs: (class: "endorser-name"))[#organization.name]
         ]
       ]
     }

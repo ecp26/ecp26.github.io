@@ -317,16 +317,23 @@ the level of Candidate the ECP is aimed at.
 
 = Organizers <organizers>
 
-The European Coaching Program is organized jointly by *Naud Berkuizen*
+The European Coaching Program is organized jointly by *Naud Berkhuizen*
 (BHS Performance Judge from the Netherlands), *Alexander Koller* (former BHS
 Musicality Judge from Germany), and *Stefanie Schmidt* (BHS Performance Judge
 from Germany). All three have organized and taught at the Coaching Stream
 at the European Harmony Academy and on other occasions.
 
-The ECP is officially endorsed by national barbershop societies
-all over Europe:
+The European Coaching Program is officially endorsed by:
 
-(insert logos here)
+#endorsed-by(
+  "BABS",
+  "BIBA",
+  "BinG!",
+  "Holland Harmony",
+  "IABS",
+  "LABBS",
+  "SNOBS"
+)
 
 
 
