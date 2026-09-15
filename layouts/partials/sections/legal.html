@@ -1,0 +1,10 @@
+<section class="content-section legal-section" id="imprint">
+  <h2>{{ .imprint_heading }}</h2>
+  <p><strong>{{ .responsible_label }}:</strong><br>{{ .responsible }}</p>
+  <p>{{ .contact }}</p>
+</section>
+
+<section class="content-section legal-section" id="privacy">
+  <h2>{{ .privacy_heading }}</h2>
+  <div class="rich-text">{{ .privacy | markdownify }}</div>
+</section>

@@ -1,0 +1,8 @@
+<section class="content-section" id="timeline">
+  <h2>{{ .heading }}</h2>
+  <ul class="timeline">
+    {{ range .events }}
+      <li><strong>{{ .date }}</strong><span>{{ .event }}</span></li>
+    {{ end }}
+  </ul>
+</section>

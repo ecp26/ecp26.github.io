@@ -1,5 +1,8 @@
 {{ define "main" }}
   <article class="page-content">
-    {{ .Content }}
+    {{ range .Params.sections }}
+      {{ $type := index . "type" }}
+      {{ partial (printf "sections/%s.html" $type) . }}
+    {{ end }}
   </article>
 {{ end }}

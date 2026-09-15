@@ -125,7 +125,7 @@ main { background: var(--surface); }
   color: #3f4858;
 }
 
-.page-content h1 + p {
+.page-content .strapline {
   display: inline-block;
   margin-bottom: 1rem;
   padding: .2rem .6rem;
@@ -137,14 +137,12 @@ main { background: var(--surface); }
   letter-spacing: .08em;
 }
 
-.page-content h1 + p + p {
+.page-content .summary {
   max-width: 680px;
   color: var(--accent);
   font-size: clamp(1.2rem, 3vw, 1.55rem);
   line-height: 1.45;
 }
-
-.page-content h1 + p + p em { font-style: normal; }
 
 .page-content ul,
 .page-content ol {
@@ -161,6 +159,16 @@ main { background: var(--surface); }
 .page-content li::marker { color: var(--highlight); }
 .page-content strong { color: var(--ink); }
 .page-content h4 + p { color: var(--muted); }
+
+.upcoming li strong + span::before,
+.timeline li strong + span::before,
+.people-list li strong + span::before {
+  content: " — ";
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.coaches-list li a::before { content: " — "; }
 
 .page-content blockquote {
   margin: 2rem 0;

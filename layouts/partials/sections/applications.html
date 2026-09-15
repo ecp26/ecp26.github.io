@@ -1,0 +1,6 @@
+<section class="content-section" id="applications">
+  <h2>{{ .heading }}</h2>
+  <h3>{{ .subheading }}</h3>
+  <div class="rich-text">{{ .body | markdownify }}</div>
+  <p class="cost-note"><strong>{{ .cost_label }}:</strong> {{ .cost }}</p>
+</section>

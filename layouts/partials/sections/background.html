@@ -1,0 +1,15 @@
+<section class="content-section" id="background">
+  <h2>{{ .heading }}</h2>
+  <h3>{{ .subheading }}</h3>
+  <div class="rich-text">{{ .body | markdownify }}</div>
+  <h3>{{ .list_heading }}</h3>
+  <ul class="people-list coaches-list">
+    {{ range .coaches }}
+      <li>
+        <strong>{{ .name }}</strong>
+        <span>{{ .achievement }}</span>
+        {{ with .profile_url }}<a href="{{ . }}">Profile ↗</a>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</section>
