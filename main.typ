@@ -214,7 +214,7 @@ GDPR-compliant data management plan published before applications open.
     name: [Paul Wigley],
     picture: "images/people/man-placeholder.svg",
     profile: [
-      BHS Musicality Judge since 1986 and former Music
+      BHS Musicality/Interpretation Judge since 1986 and former Music
       Category Specialist. Long-time director of the Minneapolis Commodores and
       faculty member at BHS Directors Colleges across the United States.
     ],
@@ -312,25 +312,42 @@ the level of Candidate the ECP is aimed at.
   ),
 )
 
-= Organisers <organisers>
 
-#people(
-  (
-    name: [Naud Berkhuizen],
-    picture: "images/people/man-placeholder.svg",
-    profile: [BHS Performance judge · Netherlands],
-  ),
-  (
-    name: [Alexander Koller],
-    picture: "images/people/alexander-koller.webp",
-    profile: [Former BHS Musicality judge · Germany],
-  ),
-  (
-    name: [Stefanie Schmidt],
-    picture: "images/people/stefanie-schmidt.webp",
-    profile: [BHS Performance judge · Germany],
-  ),
-)
+
+
+= Organizers <organizers>
+
+The European Coaching Program is organized jointly by *Naud Berkuizen*
+(BHS Performance Judge from the Netherlands), *Alexander Koller* (former BHS
+Musicality Judge from Germany), and *Stefanie Schmidt* (BHS Performance Judge
+from Germany). All three have organized and taught at the Coaching Stream
+at the European Harmony Academy and on other occasions.
+
+The ECP is officially endorsed by national barbershop societies
+all over Europe:
+
+(insert logos here)
+
+
+
+
+// #people(
+//   (
+//     name: [Naud Berkhuizen],
+//     picture: "images/people/man-placeholder.svg",
+//     profile: [BHS Performance judge · Netherlands],
+//   ),
+//   (
+//     name: [Alexander Koller],
+//     picture: "images/people/alexander-koller.webp",
+//     profile: [Former BHS Musicality judge · Germany],
+//   ),
+//   (
+//     name: [Stefanie Schmidt],
+//     picture: "images/people/stefanie-schmidt.webp",
+//     profile: [BHS Performance judge · Germany],
+//   ),
+// )
 
 = Imprint <imprint>
 
