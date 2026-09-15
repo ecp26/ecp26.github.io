@@ -1,45 +1,32 @@
 # European Coaching Program website
 
-Initial Hugo prototype for the European Coaching Program. The page is stored as structured YAML front matter in `content/_index.md`. Hugo templates turn each section type into semantic HTML with its own layout.
+The site is written in Typst and exported as a static HTML bundle. Website
+content lives in `main.typ`; `template.typ` contains the HTML structure and
+connects it to the existing stylesheet in `static/css/site.css`.
 
 ## Preview locally
 
 ```sh
-hugo server
+typst watch --features html,bundle --format bundle main.typ public
 ```
 
-Open <http://localhost:1313>.
+Typst prints the local preview URL when the server starts.
 
-## Editing through Sveltia CMS
+## Editing
 
-Sveltia is included in the repository, so local editing does not require an
-account, a CMS proxy or an internet connection.
+Edit `main.typ` directly. Major sections use normal Typst headings and labels.
+Helpers are reserved for structured content such as program cards, timelines,
+and people lists; HTML tags, attributes, and CSS class names belong in
+`template.typ`.
 
-1. Run `hugo server` in the project directory.
-2. In Chrome, Edge or another Chromium-based browser, open
-   <http://localhost:1313/admin/index.html>.
-3. Choose **Work with Local Repository** and select this project directory.
-4. Open **Website → Homepage**, make an edit and save it.
-5. Preview the result at <http://localhost:1313>. Hugo reloads when the content
-   file changes.
-
-Sveltia writes directly to `content/_index.md`; it does not commit or push.
-Review and commit the changes with Git as usual. Firefox and Safari cannot use
-this local workflow because they do not support the required File System Access
-API.
-
-The editor presents the homepage as an ordered list of named sections. Dates,
-program components, coaches and organisers are editable lists with separate
-fields. Longer prose fields use a rich-text editor; their stored Markdown is an
-implementation detail.
-
-The CMS bundle and its fonts are vendored under `static/admin`, so the editor
-also starts while offline. `static/admin/config.yml` contains a placeholder
-repository name. Replace it with the eventual GitHub `owner/repository` before
-setting up browser-based remote editing for organisers.
+Typst's HTML and bundle exporters are currently experimental, so the compiler
+version is pinned in the GitHub Actions workflow. Test the generated site before
+changing that version.
 
 ## GitHub Pages setup
 
-In the repository settings, open **Pages** and choose **GitHub Actions** as the source. The workflow in `.github/workflows/hugo.yml` builds and publishes the site after each push to `main`.
+In the repository settings, open **Pages** and choose **GitHub Actions** as the
+source. The workflow in `.github/workflows/typst.yml` builds and publishes the
+site after each push to `main`.
 
-Before launch, replace the placeholder `baseURL` in `hugo.toml` with the final domain and complete the imprint contact details in `content/_index.md`.
+Before launch, complete the imprint contact details in `main.typ`.
