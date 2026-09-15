@@ -63,6 +63,27 @@
               }
             }
           ]
+          #element("details", attrs: (class: "mobile-nav"))[
+            #element("summary", attrs: (
+              "aria-label": "Open navigation menu",
+            ))[
+              #element("span", attrs: (class: "mobile-nav-label"))[Menu]
+              #element("span", attrs: (
+                class: "hamburger",
+                "aria-hidden": "true",
+              ))[]
+            ]
+            #element("nav", attrs: ("aria-label": "Mobile navigation"))[
+              #context {
+                let sections = query(heading.where(level: 1))
+                for section in sections {
+                  if section.has("label") and section.label != <imprint> and section.label != <privacy> {
+                    link(section.label, section.body)
+                  }
+                }
+              }
+            ]
+          ]
         ]
         #element("main", attrs: (id: "main"))[
           #element("article", attrs: (class: "page-content"), body)
