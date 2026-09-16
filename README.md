@@ -7,7 +7,8 @@ copying, validation, minification, the sitemap, and the development server.
 ## Project structure
 
 - `content/index.typ` contains the page copy and structured content.
-- `templates/site.typ` defines the shared HTML structure and components.
+- `templates/layout.typ` defines the Tola page metadata and shared HTML shell.
+- `components/site.typ` contains the reusable content components.
 - `assets/css/site.css` contains the visual design.
 - `assets/images/` contains portraits and organization logos.
 - `tola.toml` contains build, asset, SEO, and development-server settings.

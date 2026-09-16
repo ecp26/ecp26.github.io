@@ -1,13 +1,18 @@
 // European Coaching Program website content.
 //
 // Tola routes this file to `/`. Edit prose and structured entries here;
-// HTML structure and CSS classes live in templates/site.typ.
+// the shared page shell lives in templates/layout.typ and the structured
+// content helpers live in components/site.typ.
 
-#import "/templates/site.typ": *
+#import "@tola/site:0.0.0": info
+#import "/templates/layout.typ": layout
+#import "/components/site.typ": endorsed-by, introduction, people
+#import "/components/site.typ": program-component, program-components
+#import "/components/site.typ": timeline, upcoming-dates
 
-#show: site.with(
-  title: "European Coaching Program",
-  description: "A two-year training and certification program for barbershop coaches in Europe.",
+#show: layout.with(
+  title: info.title,
+  description: info.description,
 )
 
 #introduction(
