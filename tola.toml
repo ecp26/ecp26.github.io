@@ -1,0 +1,60 @@
+# Tola configuration for the European Coaching Program website.
+
+[site.info]
+title = "European Coaching Program"
+author = "European Coaching Program"
+description = "A two-year training and certification program for barbershop coaches in Europe."
+language = "en"
+url = "https://ecp26.github.io"
+copyright = "European Coaching Program"
+
+[site.seo]
+auto_og = true
+
+[site.seo.feed]
+enable = false
+
+[site.seo.sitemap]
+enable = true
+path = "sitemap.xml"
+
+[site.header]
+# Keep the public site script-free: the navigation works with native HTML.
+no_fouc = false
+styles = ["assets/css/site.css"]
+scripts = []
+elements = ['<meta name="theme-color" content="#1d477f">']
+
+[build]
+content = "content"
+output = "public"
+minify = true
+deps = ["templates"]
+
+[build.assets]
+# Copy the asset tree to `public/assets/`.
+nested = ["assets"]
+flatten = []
+
+[build.hooks.css]
+enable = false
+
+[build.slug]
+path = "safe"
+fragment = "full"
+separator = "dash"
+case = "lower"
+
+[serve]
+interface = "127.0.0.1"
+port = 5277
+watch = true
+respect_prefix = false
+
+[validate.pages]
+enable = true
+level = "error"
+
+[validate.assets]
+enable = true
+level = "error"

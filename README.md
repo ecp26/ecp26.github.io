@@ -1,84 +1,67 @@
 # European Coaching Program website
 
-This is a static website written in [Typst](https://typst.app/), a markup and
-typesetting system with syntax similar to Markdown. Typst compiles the source
-into an HTML bundle containing the page, stylesheet, and images. No JavaScript
-toolchain or package manager is required.
+This is a static website built with [Tola](https://github.com/tola-rs/tola-ssg/),
+a Typst-based static site generator. Tola handles routing, site metadata, asset
+copying, validation, minification, the sitemap, and the development server.
 
-Website content lives in `main.typ`. The HTML structure is defined in
-`template.typ`, and the visual design lives in `static/css/site.css`.
+## Project structure
 
-## Install Typst
+- `content/index.typ` contains the page copy and structured content.
+- `templates/site.typ` defines the shared HTML structure and components.
+- `assets/css/site.css` contains the visual design.
+- `assets/images/` contains portraits and organization logos.
+- `tola.toml` contains build, asset, SEO, and development-server settings.
 
-The deployment workflow uses Typst 0.15.0. Install that version, or a compatible
-0.15.x release, from the [Typst releases
-page](https://github.com/typst/typst/releases). Typst is a single executable.
+The generated `public/` directory is ignored by Git. Do not edit it by hand.
 
-Package managers also provide it:
+## Install Tola
 
-```sh
-# macOS with Homebrew
-brew install typst
-
-# Windows with WinGet
-winget install --id Typst.Typst
-```
-
-On Linux, use your distribution's package manager if it provides Typst, or
-download the appropriate archive from the releases page and put the `typst`
-executable on your `PATH`.
-
-Check the installation with:
+This project is tested with Tola 0.7.1. Install it from the
+[Tola releases page](https://github.com/tola-rs/tola-ssg/releases/tag/v0.7.1)
+or with Cargo:
 
 ```sh
-typst --version
+cargo install --locked tola --version 0.7.1
 ```
 
-## Compile the website
+Confirm the installation with:
+
+```sh
+tola --version
+```
+
+## Preview locally
 
 From the repository root, run:
 
 ```sh
-typst compile --features html,bundle --format bundle main.typ public
+tola serve
 ```
 
-The generated website is written to `public/`, with the entry page at
-`public/index.html`. The entire directory is generated and excluded from Git;
-do not edit it by hand.
+The development server watches the content, template, and asset directories and
+serves the site at <http://127.0.0.1:5277/>.
 
-## Preview locally
+## Validate and build
 
-For live preview while editing, run:
+Check internal links and asset references:
 
 ```sh
-typst watch --features html,bundle --format bundle main.typ public
+tola validate
 ```
 
-Typst recompiles the site whenever a source file changes, starts a local web
-server, and prints its URL in the terminal. Stop it with Ctrl+C.
+Create a clean production build:
 
-## Editing
+```sh
+tola build --clean
+```
 
-Edit `main.typ` directly. Major sections use normal Typst headings and labels.
-Helpers are reserved for structured content such as program cards, timelines,
-and people lists; HTML tags, attributes, and CSS class names belong in
-`template.typ`.
+The generated site is written to `public/`.
 
-Typst's HTML and bundle exporters are currently experimental, so the compiler
-version is pinned in the GitHub Actions workflow. Test the generated site before
-changing that version.
+## Deployment
 
-## Build without installing Typst
+The GitHub Actions workflow downloads the pinned Tola 0.7.1 binary, verifies its
+checksum, validates the source, builds the site, and deploys `public/` to GitHub
+Pages after a push to `main`. In the repository settings, configure **Pages** to
+use **GitHub Actions** as its source.
 
-You do not need Typst locally merely to publish an edit. Commit and push the
-source files to `main`; GitHub Actions installs the pinned compiler, builds the
-site, and deploys it. Check the repository's **Actions** tab if the deployment
-does not appear.
-
-## GitHub Pages setup
-
-In the repository settings, open **Pages** and choose **GitHub Actions** as the
-source. The workflow in `.github/workflows/typst.yml` builds and publishes the
-site after each push to `main`.
-
-Before launch, complete the imprint contact details in `main.typ`.
+Before launch, complete the imprint contact details in `content/index.typ`.

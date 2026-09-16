@@ -1,2 +1,6 @@
 /public/
+/.tola/
+/tola
+/tola.tar.gz
+/checksums.txt
 .DS_Store

@@ -1,7 +1,7 @@
-// HTML rendering and site structure for the ECP website.
+// Tola page template and HTML structure for the ECP website.
 //
 // Keep HTML tags, attributes, CSS classes, and bundled assets in this file so
-// that main.typ can remain a human-readable content document.
+// that content/index.typ can remain a human-readable content document.
 
 #let element(tag, attrs: (:), body) = html.elem(
   tag,
@@ -27,8 +27,15 @@
   language: "en",
   body,
 ) = {
-  document("index.html", title: title)[
-    #element("html", attrs: (lang: language))[
+  // Tola reads this metadata to build its page index, sitemap and SEO tags.
+  [#metadata((
+    title: title,
+    summary: description,
+    draft: false,
+    global-header: true,
+  )) <tola-meta>]
+
+  element("html", attrs: (lang: language))[
       #element("head")[
         #void-element("meta", attrs: (charset: "utf-8"))
         #void-element("meta", attrs: (
@@ -37,7 +44,6 @@
         ))
         #void-element("meta", attrs: (name: "description", content: description))
         #element("title", title)
-        #void-element("link", attrs: (rel: "stylesheet", href: "css/site.css"))
       ]
       #element("body")[
         #element("a", attrs: (class: "skip-link", href: "#main"))[Skip to content]
@@ -96,40 +102,7 @@
           ]
         ]
       ]
-    ]
   ]
-
-  asset("css/site.css", read("static/css/site.css", encoding: none))
-  for picture in (
-    "placeholder.svg",
-    "man-placeholder.svg",
-    "woman-placeholder.svg",
-    "alexander-koller.webp",
-    "lucas-bitzer.webp",
-    "mareike-meise.webp",
-    "miriam-guenther.webp",
-    "norbert-hammes.webp",
-    "stefanie-schmidt.webp",
-  ) {
-    asset(
-      "images/people/" + picture,
-      read("static/images/people/" + picture, encoding: none),
-    )
-  }
-  for logo in (
-    "iabs.jpg",
-    "babs.png",
-    "labbs.jpg",
-    "bing.svg",
-    "biba.png",
-    "holland-harmony.jpg",
-    "snobs.png",
-  ) {
-    asset(
-      "images/endorsers/" + logo,
-      read("static/images/endorsers/" + logo, encoding: none),
-    )
-  }
 }
 
 #let introduction(
@@ -211,43 +184,44 @@
 }
 
 // The short names below are the arguments accepted by `endorsed-by`.
-// To add a society, place its logo in static/images/endorsers/, add an entry
-// here, and then use its short name in main.typ (for example: #endorsed-by("BABS")).
+// To add a society, place its logo in assets/images/endorsers/, add an entry
+// here, and then use its short name in content/index.typ (for example:
+// #endorsed-by("BABS")).
 #let endorser-organizations = (
   "IABS": (
     name: "Irish Association of Barbershop Singers",
     homepage: "https://www.irishbarbershop.com/",
-    logo: "images/endorsers/iabs.jpg",
+    logo: "/assets/images/endorsers/iabs.jpg",
   ),
   "BABS": (
     name: "British Association of Barbershop Singers",
     homepage: "https://www.singbarbershop.com/",
-    logo: "images/endorsers/babs.png",
+    logo: "/assets/images/endorsers/babs.png",
   ),
   "LABBS": (
     name: "Ladies Association of British Barbershop Singers",
     homepage: "https://www.labbs.org.uk/",
-    logo: "images/endorsers/labbs.jpg",
+    logo: "/assets/images/endorsers/labbs.jpg",
   ),
   "BinG!": (
     name: "Barbershop in Germany",
     homepage: "https://www.barbershop.de/en",
-    logo: "images/endorsers/bing.svg",
+    logo: "/assets/images/endorsers/bing.svg",
   ),
   "BIBA": (
     name: "Barbershop of Iberia Association",
     homepage: "https://bibabarbershop.com/",
-    logo: "images/endorsers/biba.png",
+    logo: "/assets/images/endorsers/biba.png",
   ),
   "Holland Harmony": (
     name: "Holland Harmony",
     homepage: "https://www.hollandharmony.nl/",
-    logo: "images/endorsers/holland-harmony.jpg",
+    logo: "/assets/images/endorsers/holland-harmony.jpg",
   ),
   "SNOBS": (
     name: "Society of Nordic Barbershop Singers",
     homepage: "https://www.snobs.org/",
-    logo: "images/endorsers/snobs.png",
+    logo: "/assets/images/endorsers/snobs.png",
   ),
 )
 

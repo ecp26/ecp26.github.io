@@ -1,9 +1,9 @@
 // European Coaching Program website content.
 //
-// Edit prose and structured entries here. HTML structure, CSS classes, and
-// deployment assets live in template.typ.
+// Tola routes this file to `/`. Edit prose and structured entries here;
+// HTML structure and CSS classes live in templates/site.typ.
 
-#import "template.typ": *
+#import "/templates/site.typ": *
 
 #show: site.with(
   title: "European Coaching Program",
@@ -151,7 +151,7 @@ GDPR-compliant data management plan published before applications open.
 #people(
   (
     name: [Jay Butterfield],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Singing Judge since 2016 and member of the Singing Board of
       Review. Musical Director of Parkside Harmony and Harmony University
@@ -162,7 +162,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Elizabeth Davies],
-    picture: "images/people/woman-placeholder.svg",
+    picture: "/assets/images/people/woman-placeholder.svg",
     profile: [
       BHS Singing Judge, 2023–2026. Director of the Sound Harmony Chorus and Seattle SeaChordsmen.
       Taught multiple classes at Harmony University, including on the Language of Masterful Coaching.
@@ -171,7 +171,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Mark Kettner],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Performance Judge since 2010 and former Performance Category
       Specialist. Musical Director of the Appalachian Express Chorus and an
@@ -181,7 +181,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Allen Otto],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Performance Judge since 2019 and member of the Performance Board
       of Review. Former Dean of the Performance College at Harmony University,
@@ -192,7 +192,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Gary Plaag],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Performance/Presentation Judge, 1998–2019. International chorus and
       quartet coach and Harmony University faculty member for 17 years;
@@ -202,7 +202,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Jordan Travis],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Singing Judge, 2014–2020. International vocal coach and
       music educator; Artistic Director of Harbourtown Sound, A Cappella
@@ -212,7 +212,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Paul Wigley],
-    picture: "images/people/man-placeholder.svg",
+    picture: "/assets/images/people/man-placeholder.svg",
     profile: [
       BHS Musicality/Interpretation Judge since 1986 and former Music
       Category Specialist. Long-time director of the Minneapolis Commodores and
@@ -249,7 +249,7 @@ the level of Candidate the ECP is aimed at.
 #people(
   (
     name: [Lucas Bitzer],
-    picture: "images/people/lucas-bitzer.webp",
+    picture: "/assets/images/people/lucas-bitzer.webp",
     profile: [
       BHS Singing Judge since 2026 and 2013 European men's quartet champion.
       Certified Alexander Technique teacher and Lichtenberger voice teacher.
@@ -259,7 +259,7 @@ the level of Candidate the ECP is aimed at.
   ),
   (
     name: [Miriam Günther],
-    picture: "images/people/miriam-guenther.webp",
+    picture: "/assets/images/people/miriam-guenther.webp",
     profile: [
       Music educator, singing teacher, and coach of pop, jazz, and barbershop
       choruses. National and international quartet competitor with SPLASH!,
@@ -271,7 +271,7 @@ the level of Candidate the ECP is aimed at.
 
   (
     name: [Norbert Hammes],
-    picture: "images/people/norbert-hammes.webp",
+    picture: "/assets/images/people/norbert-hammes.webp",
     profile: [
       BHS Singing Judge since 2023. Founding member and former Vice-Chair of
       BinG!; German quartet champion with Viertakt in 1993 and TONIKUM in 2014.
@@ -281,7 +281,7 @@ the level of Candidate the ECP is aimed at.
   ),
   (
     name: [Alexander Koller],
-    picture: "images/people/alexander-koller.webp",
+    picture: "/assets/images/people/alexander-koller.webp",
     profile: [
       BHS Musicality Judge, 2023–2026. Founder of the European Harmony Brigade
       and co-organiser of the Coaching Certification Program. Faculty member at
@@ -292,7 +292,7 @@ the level of Candidate the ECP is aimed at.
 
   (
     name: [Mareike Meise],
-    picture: "images/people/mareike-meise.webp",
+    picture: "/assets/images/people/mareike-meise.webp",
     profile: [
       Founder and Musical Director of A Cappella Company Dachau. Long-time
       Harmunichs singer and vocal teacher, with a coaching focus on authentic
@@ -302,7 +302,7 @@ the level of Candidate the ECP is aimed at.
 
   (
     name: [Stefanie Schmidt],
-    picture: "images/people/stefanie-schmidt.webp",
+    picture: "/assets/images/people/stefanie-schmidt.webp",
     profile: [
       BHS Performance Judge since 2023. Co-founder and co-organiser of the
       Coaching Certification Program and European Harmony Brigade, former
@@ -341,17 +341,17 @@ The European Coaching Program is officially endorsed by:
 // #people(
 //   (
 //     name: [Naud Berkhuizen],
-//     picture: "images/people/man-placeholder.svg",
+//     picture: "/assets/images/people/man-placeholder.svg",
 //     profile: [BHS Performance judge · Netherlands],
 //   ),
 //   (
 //     name: [Alexander Koller],
-//     picture: "images/people/alexander-koller.webp",
+//     picture: "/assets/images/people/alexander-koller.webp",
 //     profile: [Former BHS Musicality judge · Germany],
 //   ),
 //   (
 //     name: [Stefanie Schmidt],
-//     picture: "images/people/stefanie-schmidt.webp",
+//     picture: "/assets/images/people/stefanie-schmidt.webp",
 //     profile: [BHS Performance judge · Germany],
 //   ),
 // )
