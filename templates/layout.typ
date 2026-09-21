@@ -25,12 +25,20 @@
   base + current-permalink
 }
 
-#let navigation() = context {
-  let sections = query(heading.where(level: 1))
-  for section in sections {
-    if section.has("label") and section.label != <imprint> and section.label != <privacy> {
-      link(section.label, section.body)
-    }
+#let primary-sections = (
+  (id: "program", label: [Program]),
+  (id: "applications", label: [Applications]),
+  (id: "timeline", label: [Timeline]),
+  (id: "organizers", label: [Organizers]),
+)
+
+#let section-href(id) = {
+  if current-permalink == "/" { "#" + id } else { "/#" + id }
+}
+
+#let navigation() = {
+  for section in primary-sections {
+    link(section-href(section.id), section.label)
   }
 }
 
@@ -41,6 +49,11 @@
   body,
 ) = {
   let canonical = canonical-url()
+  let document-title = if title == info.title {
+    title
+  } else {
+    title + " · " + info.title
+  }
 
   // Tola reads this metadata for its page index, sitemap and generated tags.
   [#metadata((
@@ -61,7 +74,7 @@
       #if canonical != none {
         void-element("link", attrs: (rel: "canonical", href: canonical))
       }
-      #element("title", title)
+      #element("title", document-title)
     ]
     #element("body")[
       #element("a", attrs: (class: "skip-link", href: "#main"))[Skip to content]
@@ -101,8 +114,8 @@
       #element("footer", attrs: (class: "site-footer"))[
         #element("span", info.title)
         #element("nav", attrs: ("aria-label": "Legal information"))[
-          #link(<imprint>)[Imprint]
-          #link(<privacy>)[Privacy]
+          #link("/imprint/")[Imprint]
+          #link("/privacy/")[Privacy]
         ]
       ]
     ]

@@ -371,7 +371,7 @@ main { background: var(--surface); }
 
 .page-content .person-picture {
   width: 76px;
-  aspect-ratio: 1;
+  height: 76px;
   object-fit: cover;
   margin: 0;
   background: var(--accent-soft);
@@ -537,6 +537,9 @@ main { background: var(--surface); }
   .page-content h2 { margin-top: 4rem; }
   .upcoming h2 { margin-top: 0; }
   .person { grid-template-columns: 64px minmax(0, 1fr); }
-  .page-content .person-picture { width: 64px; }
+  .page-content .person-picture {
+    width: 64px;
+    height: 64px;
+  }
   .site-footer { flex-direction: column; padding-inline: 16px; }
 }

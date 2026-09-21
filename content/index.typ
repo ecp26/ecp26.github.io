@@ -156,7 +156,7 @@ GDPR-compliant data management plan published before applications open.
 #people(
   (
     name: [Jay Butterfield],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/jay-butterfield.webp",
     profile: [
       BHS Singing Judge since 2016 and member of the Singing Board of
       Review. Musical Director of Parkside Harmony and Harmony University
@@ -167,7 +167,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Elizabeth Davies],
-    picture: "/assets/images/people/woman-placeholder.svg",
+    picture: "/assets/images/people/elizabeth-davies.webp",
     profile: [
       BHS Singing Judge, 2023–2026. Director of the Sound Harmony Chorus and Seattle SeaChordsmen.
       Taught multiple classes at Harmony University, including on the Language of Masterful Coaching.
@@ -176,7 +176,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Mark Kettner],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/mark-kettner.webp",
     profile: [
       BHS Performance Judge since 2010 and former Performance Category
       Specialist. Musical Director of the Appalachian Express Chorus and an
@@ -186,7 +186,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Allen Otto],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/allen-otto.webp",
     profile: [
       BHS Performance Judge since 2019 and member of the Performance Board
       of Review. Former Dean of the Performance College at Harmony University,
@@ -197,7 +197,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Gary Plaag],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/gary-plaag.webp",
     profile: [
       BHS Performance/Presentation Judge, 1998–2019. International chorus and
       quartet coach and Harmony University faculty member for 17 years;
@@ -207,7 +207,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Jordan Travis],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/jordan-travis.webp",
     profile: [
       BHS Singing Judge, 2014–2020. International vocal coach and
       music educator; Artistic Director of Harbourtown Sound, A Cappella
@@ -217,7 +217,7 @@ GDPR-compliant data management plan published before applications open.
 
   (
     name: [Paul Wigley],
-    picture: "/assets/images/people/man-placeholder.svg",
+    picture: "/assets/images/people/paul-wigley.webp",
     profile: [
       BHS Musicality/Interpretation Judge since 1986 and former Music
       Category Specialist. Long-time director of the Minneapolis Commodores and
@@ -331,13 +331,13 @@ at the European Harmony Academy and on other occasions.
 The European Coaching Program is officially endorsed by:
 
 #endorsed-by(
-  "BABS",
+  // "BABS",
   "BIBA",
   "BinG!",
   "Holland Harmony",
   "IABS",
-  "LABBS",
-  "SNOBS"
+  // "LABBS",
+  // "SNOBS"
 )
 
 
@@ -360,20 +360,3 @@ The European Coaching Program is officially endorsed by:
 //     profile: [BHS Performance judge · Germany],
 //   ),
 // )
-
-= Imprint <imprint>
-
-*Responsible for this website:* #linebreak()
-Naud Berkhuizen, Alexander Koller and Stefanie Schmidt
-
-Contact email and postal address to be added before publication.
-
-= Privacy <privacy>
-
-The public website does not use analytics, tracking pixels, advertising,
-cookies, browser storage or third-party embeds. It does not collect
-information through forms.
-
-The hosting provider may process standard request data, including IP
-addresses and browser information, to deliver and protect the site. External
-websites receive information only when you follow a link to them.

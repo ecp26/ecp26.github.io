@@ -30,8 +30,8 @@
 ) = {
   _element("header", attrs: (class: "page-introduction"))[
     #_html-heading(1, title)
-    #_paragraph(class: "strapline", strapline)
-    #_paragraph(class: "summary", summary)
+    #if strapline != none { _paragraph(class: "strapline", strapline) }
+    #if summary != none { _paragraph(class: "summary", summary) }
   ]
 }
 
@@ -164,19 +164,21 @@
   ))[
     #for short-name in short-names.pos() {
       let organization = _endorser-organizations.at(short-name)
+      let logo = _element("span", attrs: (class: "endorser-logo"))[
+        #_void-element("img", attrs: (
+          src: organization.logo,
+          alt: organization.name,
+        ))
+      ]
+      let name = _element("span", attrs: (class: "endorser-name"))[
+        #organization.name
+      ]
+
       _element("li")[
         #_element("a", attrs: (
           href: organization.homepage,
           "aria-label": organization.name,
-        ))[
-          #_element("span", attrs: (class: "endorser-logo"))[
-            #_void-element("img", attrs: (
-              src: organization.logo,
-              alt: organization.name,
-            ))
-          ]
-          #_element("span", attrs: (class: "endorser-name"))[#organization.name]
-        ]
+        ), logo + name)
       ]
     }
   ]

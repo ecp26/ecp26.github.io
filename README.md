@@ -6,7 +6,8 @@ copying, validation, minification, the sitemap, and the development server.
 
 ## Project structure
 
-- `content/index.typ` contains the page copy and structured content.
+- `content/index.typ` contains the home-page copy and structured content.
+- `content/imprint.typ` and `content/privacy.typ` contain the legal pages.
 - `templates/layout.typ` defines the Tola page metadata and shared HTML shell.
 - `components/site.typ` contains the reusable content components.
 - `assets/css/site.css` contains the visual design.
@@ -65,4 +66,4 @@ checksum, validates the source, builds the site, and deploys `public/` to GitHub
 Pages after a push to `main`. In the repository settings, configure **Pages** to
 use **GitHub Actions** as its source.
 
-Before launch, complete the imprint contact details in `content/index.typ`.
+Before launch, complete the contact details in `content/imprint.typ`.
