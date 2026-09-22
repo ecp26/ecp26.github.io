@@ -115,8 +115,8 @@ seek financial support from their national barbershop societies.
 
 == How to apply
 
-The deadline for applications is 15 November 2026. We will link to an application
-form from this website.
+The deadline for applications is 15 November 2026. We will link to a Google
+Form from this website.
 
 The application will include coaching videos and written questions about
 coaching experience, approach and motivation. Shortlisted applicants will
@@ -146,8 +146,8 @@ review of coaching videos and feedback.
 
 The successful Candidates will become Certified Coaches in the second half of 2029.
 
-Coaching videos and application material will be handled under a
-GDPR-compliant data management plan published before applications open.
+Coaching videos and application material will be handled as described in our
+#link("/legal/#privacy")[privacy notice].
 
 
 = Selection Team

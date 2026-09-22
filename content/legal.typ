@@ -43,7 +43,7 @@ Email: #link("mailto:koller@coli.uni-saarland.de")[koller\@coli.uni-saarland.de]
 The three website providers named above are jointly responsible for this
 website. You can contact them through the postal or email address stated above.
 
-== Data we collect
+== Website visits
 
 We do not collect personal data about visitors to this website. The site does
 not use analytics, tracking pixels, advertising, cookies, browser storage,
@@ -75,6 +75,41 @@ contact options, see GitHub's
 This website contains links to external websites. No data is sent to those
 sites merely because a link appears here. If you follow a link, the operator
 of the external website is responsible for the data processed there.
+
+== Applications and program feedback
+
+We use Google Forms to collect applications to the European Coaching Program
+and feedback from ensembles coached by program candidates. The application
+form collects the information requested in the form, including contact
+details, written answers about coaching experience, approach and motivation,
+and coaching videos. The feedback form collects the information and
+assessment submitted by the responding ensemble.
+
+We process application data to assess and select candidates and to administer
+the program. We process ensemble feedback to support candidates' development
+and certification and to evaluate the program. The legal basis is Article
+6(1)(b) GDPR where processing is necessary to take steps at an applicant's
+request or to administer participation in the program, and Article 6(1)(f)
+GDPR for our legitimate interests in selecting candidates, assessing their
+development and improving the program.
+
+Form responses, submitted materials and coaching videos are stored in a
+Google Drive folder. Access to this folder is restricted to the ECP organizers
+and selection team. Google processes the data to provide Google Forms and
+Google Drive and may process data outside the European Economic Area. More
+information is available in Google's
+#link("https://policies.google.com/privacy")[Privacy Policy].
+
+We retain application and feedback data only for as long as we need it for
+selection, program administration, candidate development and certification,
+program evaluation, or applicable legal obligations. We delete it when it is
+no longer needed for these purposes.
+
+We produce aggregate statistics about applications and ensemble feedback and
+report them to the organizations that endorse the ECP. These reports do not
+contain names, individual responses or statistics from which an individual can
+reasonably be identified. Endorsing organizations do not receive the
+underlying application or feedback data.
 
 == Your rights
 
