@@ -46,6 +46,7 @@
   title: info.title,
   description: info.description,
   language: info.language,
+  redirect: none,
   body,
 ) = {
   let canonical = canonical-url()
@@ -71,12 +72,19 @@
         content: "width=device-width, initial-scale=1",
       ))
       #void-element("meta", attrs: (name: "description", content: description))
+      #if redirect != none {
+        void-element("meta", attrs: (
+          "http-equiv": "refresh",
+          content: "0; url=" + redirect,
+        ))
+        void-element("meta", attrs: (name: "robots", content: "noindex"))
+      }
       #if canonical != none {
         void-element("link", attrs: (rel: "canonical", href: canonical))
       }
       #element("title", document-title)
     ]
-    #element("body")[
+    #element("body", attrs: (id: "top"))[
       #element("a", attrs: (class: "skip-link", href: "#main"))[Skip to content]
       #element("header", attrs: (class: "site-header"))[
         #element("a", attrs: (
@@ -114,8 +122,7 @@
       #element("footer", attrs: (class: "site-footer"))[
         #element("span", info.title)
         #element("nav", attrs: ("aria-label": "Legal information"))[
-          #link("/imprint/")[Imprint]
-          #link("/privacy/")[Privacy]
+          #link("/legal/#top")[Imprint & Privacy]
         ]
       ]
     ]

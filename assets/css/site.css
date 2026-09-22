@@ -170,6 +170,12 @@ main { background: var(--surface); }
   letter-spacing: -.025em;
 }
 
+.page-content > .legal-section-first {
+  margin-top: 1rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .page-content h3 {
   margin: 2.25rem 0 .75rem;
   font-size: 1.35rem;
