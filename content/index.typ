@@ -209,9 +209,7 @@ GDPR-compliant data management plan published before applications open.
     name: [Jordan Travis],
     picture: "/assets/images/people/jordan-travis.webp",
     profile: [
-      BHS Singing Judge, 2014–2020. International vocal coach and
-      music educator; Artistic Director of Harbourtown Sound, A Cappella
-      Showcase, and the Golden Horseshoe choruses, and founder of InstaChoir.
+      BHS Singing Judge, 2014–2020. International vocal coach and music educator; Artistic Director of Voices Unlimited, A Cappella Showcase, and the Golden Horseshoe Choruses.
     ],
   ),
 
@@ -278,10 +276,7 @@ the level of Candidate the ECP is aimed at.
     name: [Norbert Hammes],
     picture: "/assets/images/people/norbert-hammes.webp",
     profile: [
-      BHS Singing Judge since 2023. Founding member and former Vice-Chair of
-      BinG!; German quartet champion with Viertakt in 1993 and TONIKUM in 2014.
-      Director of Barbershop Blend since 2010 and co-director of the
-      internationally competitive Heavy Medal Chorus.
+      BHS Singing Judge since 2023. Founding member and current Vice-Chair of BinG!; German quartet champion with Viertakt in 1993 and TONIKUM in 2014. Director of Barbershop Blend since 2010 and director of the internationally competitive Heavy Medal Chorus.
     ],
   ),
   (
@@ -312,7 +307,7 @@ the level of Candidate the ECP is aimed at.
       BHS Performance Judge since 2023. Co-founder and co-organiser of the
       Coaching Certification Program and European Harmony Brigade, former
       director of the A-Cappella Ladies, and European Harmony Academy faculty
-      member. Her coaching draws on theatre and jazz dance.
+      member. Her coaching focuses on authentic communication and draws on her theater and jazz dance experience.
     ],
   ),
 )
