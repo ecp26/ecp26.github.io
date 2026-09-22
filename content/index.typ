@@ -6,13 +6,20 @@
 
 #import "@tola/site:0.0.0": info
 #import "/templates/layout.typ": layout
-#import "/components/site.typ": endorsed-by, introduction, people
+#import "/components/site.typ": endorsed-by, hero-photo, introduction, people
 #import "/components/site.typ": program-component, program-components
 #import "/components/site.typ": timeline, upcoming-dates
 
 #show: layout.with(
   title: info.title,
   description: info.description,
+)
+
+#hero-photo(
+  desktop-src: "/assets/images/coaching-banner.webp",
+  mobile-src: "/assets/images/coaching-banner-mobile.webp",
+  alt: "A coach leads singers through an exercise during a workshop.",
+  caption: [Coaching at European Quartet School 2025 · Photo: Eric Ideler],
 )
 
 #introduction(

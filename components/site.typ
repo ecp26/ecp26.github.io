@@ -35,6 +35,37 @@
   ]
 }
 
+/// Render the responsive lead photograph used on the home page.
+#let hero-photo(
+  desktop-src: none,
+  mobile-src: none,
+  alt: "",
+  caption: none,
+) = {
+  _element("figure", attrs: (class: "hero-banner"))[
+    #_element("picture")[
+      #if mobile-src != none {
+        _void-element("source", attrs: (
+          srcset: mobile-src,
+          media: "(max-width: 600px)",
+        ))
+      }
+      #_void-element("img", attrs: (
+        src: desktop-src,
+        alt: alt,
+        width: "1600",
+        height: "640",
+        loading: "eager",
+        decoding: "async",
+        fetchpriority: "high",
+      ))
+    ]
+    #if caption != none {
+      _element("figcaption", caption)
+    }
+  ]
+}
+
 /// Render the highlighted upcoming-dates panel.
 ///
 /// Each positional argument must be a dictionary with `date` and `event`
