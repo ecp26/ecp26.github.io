@@ -195,10 +195,11 @@ Coaching videos and application material will be handled as described in our
     name: [Allen Otto],
     picture: "/assets/images/people/allen-otto.webp",
     profile: [
-      BHS Performance Judge since 2019 and member of the Performance Board
-      of Review. Former Dean of the Performance College at Harmony University,
-      Assistant Director of Space City Sound, and an acting and performance
-      coach.
+      BHS PER judge since 2019 and member of the PER Board of Review. Former
+      Dean and continuing faculty of the PER College at Harmony University,
+      with PER packages featured on the international stage yearly for over a
+      decade. Coaches acting and singing groups at all levels, from gold
+      medalists to first-timers.
     ],
   ),
 
