@@ -433,6 +433,14 @@ main { background: var(--surface); }
   line-height: 1.55;
 }
 
+.person-credit {
+  display: block;
+  margin-top: .45rem;
+  color: var(--muted);
+  font-size: .68rem;
+  line-height: 1.35;
+}
+
 .page-content blockquote {
   margin: 2rem 0;
   padding: .2rem 0 .2rem 1.25rem;

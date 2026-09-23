@@ -325,13 +325,45 @@ the level of Candidate the ECP is aimed at.
 
 = Organizers <organizers>
 
-The European Coaching Program is organized jointly by *Naud Berkhuizen*
-(BHS Performance Judge from the Netherlands), *Alexander Koller* (former BHS
-Musicality Judge from Germany), and *Stefanie Schmidt* (BHS Performance Judge
-from Germany). All three have organized and taught at the Coaching Stream
-at the European Harmony Academy and on other occasions.
+#people(
+  (
+    name: [Naud Berkhuizen],
+    picture: "/assets/images/people/naud-berkhuizen.webp",
+    profile: [
+      BHS Performance Judge since 2026. Member of the Holland Harmony Education Team.
+      Quartet silver medalist at Holland Harmony with Game On!.
+      He has coached
+      ensembles in Ireland and the Netherlands and served on the faculty of
+      Harmony College Northeast in Boston as well as the European Harmony Academy.
+    ],
+  ),
+  (
+    name: [Alexander Koller],
+    picture: "/assets/images/people/alexander-koller.webp",
+    profile: [
+      BHS Musicality Judge, 2023–2026. Founder of the European Harmony Brigade
+      and co-organiser of the Coaching Certification Program. Faculty member at
+      BHS Virtual Harmony University, BinG! Harmony College, the European
+      Quartet School, and the European Harmony Academy.
+    ],
+  ),
+  (
+    name: [Stefanie Schmidt],
+    picture: "/assets/images/people/stefanie-schmidt.webp",
+    profile: [
+      BHS Performance Judge since 2023. Co-founder and co-organizer of the
+      Coaching Certification Program and European Harmony Brigade.
+      Faculty member at BHS Virtual Harmony University, BinG! Harmony College,
+      the European Quartet School, and the European Harmony Academy.
+    ],
+  ),
+)
 
-The European Coaching Program is officially endorsed by:
+
+= Endorsements
+
+The European Coaching Program is officially endorsed by national barbershop societies
+from all across Europe.
 
 #endorsed-by(
   // "BABS",
@@ -342,24 +374,3 @@ The European Coaching Program is officially endorsed by:
   // "LABBS",
   // "SNOBS"
 )
-
-
-
-
-// #people(
-//   (
-//     name: [Naud Berkhuizen],
-//     picture: "/assets/images/people/man-placeholder.svg",
-//     profile: [BHS Performance judge · Netherlands],
-//   ),
-//   (
-//     name: [Alexander Koller],
-//     picture: "/assets/images/people/alexander-koller.webp",
-//     profile: [Former BHS Musicality judge · Germany],
-//   ),
-//   (
-//     name: [Stefanie Schmidt],
-//     picture: "/assets/images/people/stefanie-schmidt.webp",
-//     profile: [BHS Performance judge · Germany],
-//   ),
-// )

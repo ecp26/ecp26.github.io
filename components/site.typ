@@ -125,6 +125,7 @@
 #let people(..entries) = {
   _element("div", attrs: (class: "people-grid"))[
     #for entry in entries.pos() {
+      let credit = entry.at("credit", default: none)
       _element("article", attrs: (class: "person"))[
         #_void-element("img", attrs: (
           class: "person-picture",
@@ -136,6 +137,9 @@
         #_element("div", attrs: (class: "person-details"))[
           #_html-heading(3, entry.name)
           #_paragraph(class: "person-profile", entry.profile)
+          #if credit != none {
+            _element("small", attrs: (class: "person-credit"), credit)
+          }
         ]
       ]
     }
