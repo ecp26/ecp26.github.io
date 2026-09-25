@@ -176,8 +176,7 @@ Coaching videos and application material will be handled as described in our
     name: [Elizabeth Davies],
     picture: "/assets/images/people/elizabeth-davies.webp",
     profile: [
-      BHS Singing Judge, 2023–2026. Director of the Sound Harmony Chorus and Seattle SeaChordsmen.
-      Taught multiple classes at Harmony University, including on the Language of Masterful Coaching.
+      BHS Singing Judge, 2023–2026. Director of Sound Harmony Chorus and Rain City Voices in Seattle, Washington. Taught multiple classes at Harmony University from 2019-2023, including “The Language of Masterful Coaching.”
     ],
   ),
 
