@@ -34,7 +34,7 @@ Campus C7.2 #linebreak()
 66123 Saarbrücken #linebreak()
 Germany
 
-Email: #link("mailto:koller@coli.uni-saarland.de")[koller\@coli.uni-saarland.de]
+Email: #link("mailto:ecp26@googlegroups.com")[ecp26\@googlegroups.com]
 
 #html.elem("h2", attrs: (id: "privacy"))[Privacy]
 
@@ -111,6 +111,43 @@ contain names, individual responses or statistics from which an individual can
 reasonably be identified. Endorsing organizations do not receive the
 underlying application or feedback data.
 
+== Mailing lists
+
+We use the Google Groups service to operate mailing lists for the ECP
+organizers, selection team, and program participants.
+We process group
+members' email addresses, names, group membership information, and the
+content and technical metadata of messages sent through the groups.
+
+We use these mailing lists to coordinate the organization and selection process and to
+communicate with participants about the program. The legal basis is Article
+6(1)(b) GDPR where the communication is necessary to administer a person's
+participation in the program, and Article 6(1)(f) GDPR for our legitimate
+interests in organizing the program and conducting the selection process.
+
+Google processes this information to provide Google Groups and may process it
+outside the European Economic Area.
+The ECP organizers are owners and managers of the Google Groups and can
+access group
+membership information. Messages sent to a group are delivered to its members
+and therefore disclose the sender's name and email address, the message content,
+and associated metadata to those recipients.
+More information about Google's
+processing and international data transfers is available in Google's
+#link("https://policies.google.com/privacy")[Privacy Policy] and
+#link("https://policies.google.com/privacy/frameworks")[information about data transfer frameworks].
+
+We retain a person's group membership for as long as they need to receive or
+participate in the relevant ECP communications. We remove members when their
+role or participation ends and the group is no longer needed for follow-up
+communication. The Google Groups are configured to maintain a conversation history,
+accessible only to the respective group's members.
+We will delete the group and its message history after ECP 2026 completes.
+Copies of
+messages already delivered to members remain in their individual mailboxes and
+cannot be deleted by the ECP organizers. Google determines the retention of
+data it processes independently to operate and secure its service.
+
 == Your rights
 
 Where personal data concerning you is processed, the GDPR may give you rights
@@ -120,7 +157,7 @@ with a data protection supervisory authority. Which rights apply depends on
 the circumstances and legal basis of the processing.
 
 Contact us at the address above to exercise rights concerning processing for
-which we are responsible. For data processed independently by GitHub, contact
-GitHub using the details in its privacy statement.
+which we are responsible. For data processed independently by GitHub or Google,
+contact the relevant provider using the details in its privacy statement.
 
-_Last updated: 22 September 2026._
+_Last updated: 26 September 2026._

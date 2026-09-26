@@ -333,6 +333,8 @@ the level of Candidate the ECP is aimed at.
 
 = Organizers <organizers>
 
+The easiest way to contact the organizers is by email to #link("mailto:ecp26@googlegroups.com")[ecp26\@googlegroups.com].
+
 #people(
   (
     name: [Naud Berkhuizen],
