@@ -165,10 +165,7 @@ Coaching videos and application material will be handled as described in our
     name: [Jay Butterfield],
     picture: "/assets/images/people/jay-butterfield.webp",
     profile: [
-      BHS Singing Judge since 2016 and member of the Singing Board of
-      Review. Musical Director of Parkside Harmony and Harmony University
-      Provost in 2023. Holds a master's degree in choral conducting and a
-      doctorate in educational leadership.
+      BHS Singing Judge since 2016 and member of the Singing Board of Review. Founding Musical Director of Parkside Harmony and Harmony University faculty for 20+ years. Currently coaching several top 10 BHS, quartets and choruses. Holds a Bachelor Degree in Voice Performance, a  Master Degree  in Choral Conducting Performance, and a Doctorate in Educational Leadership.
     ],
   ),
 
@@ -301,9 +298,7 @@ the level of Candidate the ECP is aimed at.
     name: [Mareike Meise],
     picture: "/assets/images/people/mareike-meise.webp",
     profile: [
-      Founder and Musical Director of A Cappella Company Dachau. Long-time
-      Harmunichs singer and vocal teacher, with a coaching focus on authentic
-      performance, English diction, vocal freedom, and ensemble sound.
+      Musical Director of the A Cappella Company, and four-time champion with the Harmunichs. Completed Estill Voice Training® Level 2 and B-Level Jazz/Pop Choral Conducting at the Bundesmusikakademie Wolfenbüttel. Her coaching combines Estill-based vocal technique and Complete Vocal Technique with a focus on authentic, expressive performance.
     ],
   ),
 
