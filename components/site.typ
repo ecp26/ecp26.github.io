@@ -66,6 +66,89 @@
   ]
 }
 
+/// Render a responsive, progressively enhanced hero-image carousel.
+///
+/// Each slide is a dictionary with `desktop-src`, `mobile-src`, `alt`, and
+/// `caption` fields. Without JavaScript the first slide remains visible.
+#let hero-carousel(..slides) = {
+  let entries = slides.pos()
+
+  _element("figure", attrs: (
+    class: "hero-banner hero-carousel",
+    "data-hero-carousel": "",
+    "aria-label": "Coaching photographs",
+    "aria-roledescription": "carousel",
+  ))[
+    #_element("div", attrs: (class: "hero-slides"))[
+      #for (index, slide) in entries.enumerate() {
+        let active = index == 0
+        let slide-class = if active { "hero-slide is-active" } else { "hero-slide" }
+        _element("div", attrs: (
+          class: slide-class,
+          "data-hero-slide": "",
+          "aria-hidden": if active { "false" } else { "true" },
+        ))[
+          #_element("picture")[
+            #if slide.mobile-src != none {
+              _void-element("source", attrs: (
+                srcset: slide.mobile-src,
+                media: "(max-width: 600px)",
+              ))
+            }
+            #_void-element("img", attrs: (
+              src: slide.desktop-src,
+              alt: slide.alt,
+              width: "1600",
+              height: "640",
+              loading: if active { "eager" } else { "lazy" },
+              decoding: "async",
+              fetchpriority: if active { "high" } else { "auto" },
+            ))
+          ]
+          #if slide.caption != none {
+            _element("span", attrs: (class: "hero-caption"), slide.caption)
+          }
+        ]
+      }
+    ]
+
+    #if entries.len() > 1 {
+      _element("div", attrs: (
+        class: "hero-controls",
+        "data-hero-controls": "",
+        hidden: "",
+      ))[
+        #_element("button", attrs: (
+          class: "hero-arrow hero-previous",
+          type: "button",
+          "data-hero-previous": "",
+          "aria-label": "Show previous photograph",
+        ))[‹]
+        #_element("div", attrs: (
+          class: "hero-dots",
+          "aria-label": "Choose a photograph",
+        ))[
+          #for (index, _) in entries.enumerate() {
+            _element("button", attrs: (
+              class: if index == 0 { "hero-dot is-active" } else { "hero-dot" },
+              type: "button",
+              "data-hero-dot": str(index),
+              "aria-label": "Show photograph " + str(index + 1),
+              "aria-current": if index == 0 { "true" } else { "false" },
+            ))[]
+          }
+        ]
+        #_element("button", attrs: (
+          class: "hero-arrow hero-next",
+          type: "button",
+          "data-hero-next": "",
+          "aria-label": "Show next photograph",
+        ))[›]
+      ]
+    }
+  ]
+}
+
 /// Render the highlighted upcoming-dates panel.
 ///
 /// Each positional argument must be a dictionary with `date` and `event`

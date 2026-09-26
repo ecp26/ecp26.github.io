@@ -19,10 +19,9 @@ enable = true
 path = "sitemap.xml"
 
 [site.header]
-# Keep the public site script-free: the navigation works with native HTML.
 no_fouc = false
 styles = ["assets/css/site.css"]
-scripts = []
+scripts = ["assets/js/hero-carousel.js"]
 elements = ['<meta name="theme-color" content="#1d477f">']
 
 [build]
