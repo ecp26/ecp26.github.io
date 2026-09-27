@@ -283,8 +283,9 @@ the level of Candidate the ECP is aimed at.
     picture: "/assets/images/people/miriam-guenther.webp",
     profile: [
       Music educator, singing teacher, and coach of pop, jazz, and barbershop
-      choruses. National and international quartet competitor with SPLASH!,
-      Twice as Nice, and Mix 'n' Match, and a founding member of the Heavy Medal
+      choruses. Faculty at the State Music Academy of North Rhine-Westphalia.
+      German quartet champion with SPLASH!.
+      Founding member of the Heavy Medal
       Chorus.
     ],
   ),
@@ -312,7 +313,7 @@ the level of Candidate the ECP is aimed at.
     name: [Mareike Meise],
     picture: "/assets/images/people/mareike-meise.webp",
     profile: [
-      Musical Director of the A Cappella Company, and four-time champion with the Harmunichs. Completed Estill Voice Training® Level 2 and B-Level Jazz/Pop Choral Conducting at the Bundesmusikakademie Wolfenbüttel. Her coaching combines Estill-based vocal technique and Complete Vocal Technique with a focus on authentic, expressive performance.
+      Musical Director of the A Cappella Company, and four-time champion with the Harmunichs. Completed Estill Voice Training® Level 2 and B-Level Jazz/Pop Choral Conducting at the Federal Music Academy in Wolfenbüttel. Her coaching combines Estill-based vocal technique and Complete Vocal Technique with a focus on authentic, expressive performance.
     ],
   ),
 
