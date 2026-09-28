@@ -382,6 +382,7 @@ from all across Europe.
   "BinG!",
   "Holland Harmony",
   "IABS",
+  "SAI Region 31",
   // "LABBS",
   // "SNOBS"
 )

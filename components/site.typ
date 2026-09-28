@@ -269,6 +269,11 @@
     homepage: "https://www.snobs.org/",
     logo: "/assets/images/endorsers/snobs.png",
   ),
+  "SAI Region 31": (
+    name: "Region 31 - Quartet of Nations",
+    homepage: "https://sweetadelines.org.uk/",
+    logo: "/assets/images/endorsers/sai-region-31.png",
+  ),
 )
 
 /// Render linked logo cards for endorsing organizations.
