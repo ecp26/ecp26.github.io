@@ -383,6 +383,6 @@ from all across Europe.
   "Holland Harmony",
   "IABS",
   "SAI Region 31",
-  // "LABBS",
+  "LABBS",
   // "SNOBS"
 )
