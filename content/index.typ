@@ -377,7 +377,7 @@ The European Coaching Program is officially endorsed by national barbershop soci
 from all across Europe.
 
 #endorsed-by(
-  // "BABS",
+  "BABS",
   "BIBA",
   "BinG!",
   "Holland Harmony",
