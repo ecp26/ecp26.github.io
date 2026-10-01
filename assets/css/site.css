@@ -9,6 +9,7 @@
   --highlight: #d9a91d;
   --page-width: 1100px;
   --content-width: 800px;
+  --section-gap: 4rem;
 }
 
 * { box-sizing: border-box; }
@@ -229,6 +230,21 @@ main { background: var(--surface); }
 
 .page-introduction { min-width: 0; }
 
+.callout {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .35rem 1rem;
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--highlight);
+  font-size: 1.1em;
+}
+
+.callout span { color: var(--ink); }
+.callout a { color: var(--ink); }
+
 .page-content > h2,
 .page-content > h3,
 .page-content > p,
@@ -274,14 +290,14 @@ main { background: var(--surface); }
 
 .page-content h2 {
   scroll-margin-top: 6rem;
-  margin: 5rem 0 1.5rem;
+  margin: var(--section-gap) 0 1.5rem;
   padding-top: 2.5rem;
   border-top: 1px solid var(--line);
   font-size: clamp(1.8rem, 4vw, 2.45rem);
   letter-spacing: -.025em;
 }
 
-.page-content > .legal-section-first {
+.page-content > #imprint {
   margin-top: 1rem;
   padding-top: 0;
   border-top: 0;
@@ -375,6 +391,9 @@ main { background: var(--surface); }
   margin: 1.35rem 0 1.8rem;
   padding-left: 1.35rem;
 }
+
+.page-content > p + ul,
+.page-content > p + ol { margin-top: 0; }
 
 .page-content li {
   margin: .55rem 0;
@@ -567,6 +586,9 @@ main { background: var(--surface); }
 .site-footer nav { display: flex; gap: 1.25rem; }
 .site-footer a { color: #dfe5ef; }
 
+/* Grid-item margins add together: let the heading own the divider gap. */
+.page-content > :has(+ h2) { margin-bottom: 0; }
+
 @media (max-width: 1000px) {
   .brand > span:last-child { display: none; }
 }
@@ -676,7 +698,6 @@ main { background: var(--surface); }
     bottom: auto;
   }
   .page-content h1 { font-size: clamp(2.7rem, 13vw, 3.6rem); }
-  .page-content h2 { margin-top: 4rem; }
   .upcoming h2 { margin-top: 0; }
   .person { grid-template-columns: 80px minmax(0, 1fr); }
   .page-content .person-picture {

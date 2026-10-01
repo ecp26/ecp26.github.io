@@ -6,7 +6,7 @@
 
 #import "@tola/site:0.0.0": info
 #import "/templates/layout.typ": layout
-#import "/components/site.typ": endorsed-by, hero-carousel, introduction, people
+#import "/components/site.typ": callout, endorsed-by, hero-carousel, introduction, people
 #import "/components/site.typ": program-component, program-components
 #import "/components/site.typ": timeline, upcoming-dates
 
@@ -36,6 +36,7 @@
   ),
 )
 
+
 #introduction(
   title: [European Coaching Program],
   strapline: [Developing barbershop coaches across Europe],
@@ -54,6 +55,9 @@
   (date: [15 December 2026], event: [Candidates selected]),
 )
 
+#callout(title: [Applications open soon!])[
+  Apply from 1–15 November 2026. #link("#applications")[See application details →]
+]
 
 
 

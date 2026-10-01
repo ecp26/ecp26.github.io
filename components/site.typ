@@ -18,6 +18,14 @@
   _element("h" + str(level), attrs: attrs, body)
 }
 
+/// Render a gold announcement box with a title and supporting content.
+#let callout(title: none, body) = {
+  _element("aside", attrs: (class: "callout"))[
+    #if title != none { _element("strong", title) }
+    #_element("span", body)
+  ]
+}
+
 /// Render the page introduction.
 ///
 /// - `title`: The page's visible heading.

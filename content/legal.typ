@@ -1,26 +1,18 @@
 // Combined imprint and privacy information.
 
 #import "/templates/layout.typ": layout
-#import "/components/site.typ": introduction
 
 #show: layout.with(
   title: "Imprint & Privacy",
   description: "Imprint and privacy information for the European Coaching Program website.",
 )
 
-#introduction(
-  title: [Imprint & Privacy],
-)
 
-#html.elem("h2", attrs: (
-  id: "imprint",
-  class: "legal-section-first",
-))[Imprint]
+= Imprint <imprint>
 
 == Website providers
 
 This website is a joint, non-commercial project. Its joint providers are:
-
 - Naud Berkhuizen
 - Alexander Koller
 - Stefanie Schmidt
@@ -36,7 +28,10 @@ Germany
 
 Email: #link("mailto:ecp26@googlegroups.com")[ecp26\@googlegroups.com]
 
-#html.elem("h2", attrs: (id: "privacy"))[Privacy]
+
+
+
+= Privacy <privacy>
 
 == Who is responsible?
 

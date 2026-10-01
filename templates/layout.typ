@@ -49,6 +49,18 @@
   redirect: none,
   body,
 ) = {
+  // Preserve Typst heading labels as browser fragment targets.
+  show heading: it => {
+    let anchor = it.at("label", default: none)
+    if anchor == none {
+      it
+    } else {
+      element("h" + str(calc.min(it.level + 1, 6)), attrs: (
+        id: str(anchor),
+      ), it.body)
+    }
+  }
+
   let canonical = canonical-url()
   let document-title = if title == info.title {
     title
